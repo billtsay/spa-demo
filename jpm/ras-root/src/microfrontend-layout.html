@@ -1,0 +1,31 @@
+<single-spa-router>
+  <!--
+
+    This is the single-spa Layout Definition for your microfrontends.
+    See https://single-spa.js.org/docs/layout-definition/ for more information.
+
+  -->
+
+  <!-- Example layouts you might find helpful:
+    <application name="@jpm/ras-nav"></application>
+  -->
+
+  <nav>
+    <application name="@jpm/sidenavbar"></application>
+  </nav>
+
+  <main>
+    <route default>
+      <application name="@jpm/ras-app"></application>
+    </route>
+
+    <route path="planets">
+      <application name="@jpm/ras-app1"></application>
+    </route>
+    <!--
+    <route path="planets">
+      <application name="@jpm/ras-app1"></application>
+    </route>
+-->
+  </main>
+</single-spa-router>
